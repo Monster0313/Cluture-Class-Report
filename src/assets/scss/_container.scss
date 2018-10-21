@@ -1,0 +1,46 @@
+.voteBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .title {
+        position: relative;
+        width: 20vw;
+        height: 10vh;
+        top: 2vh;
+        text-align: center;
+        h1 {
+            font-size: 25pt;
+        }
+    }
+    .subtitle {
+        position: relative;
+        width: 40vw;
+        height: 10vh;
+        text-align: center;
+        p {
+            font-size: 15pt;
+        }
+    }
+    .voteForm {
+        width: 60vw;
+        height: 70%;
+        background: #fff;
+    }
+    .form-group {
+        line-height: 2;
+        margin: 15pt;
+    }
+    .submit-button {
+        width: 80pt;
+        height: 30pt;
+        border: 2pt #000 solid;
+        margin-bottom: 2rem;
+        margin: 15pt;
+        align-content: center;
+    }
+    .finish {
+        text-align: center;
+        font-size: 30pt;
+    }
+}

@@ -1,0 +1,19 @@
+@import 'color';
+@import 'reset';
+@import 'font';
+@import 'container';
+
+@media screen and (min-width: 768px) {
+  #app {
+    min-height: 100vh;
+    background: #eaeaea;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #app {
+    display: flex;
+    min-height: 100vh;
+    background: #eaeaea;
+  }
+}
