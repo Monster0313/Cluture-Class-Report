@@ -225,19 +225,7 @@
 </template>
 
 <script>
-import Firebase from 'firebase'
-
-var config = {
-  apiKey: 'AIzaSyC6ef0dTZ1R0wczOmSMAstuzPPW_VZjnNs',
-  authDomain: 'class-culture.firebaseapp.com',
-  databaseURL: 'https://class-culture.firebaseio.com',
-  projectId: 'class-culture',
-  storageBucket: 'class-culture.appspot.com',
-  messagingSenderId: '949969598489'
-}
-
-let app = Firebase.initializeApp(config)
-let db = app.database()
+import db from '../db.js'
 
 let voteRef = db.ref('votes')
 

@@ -1,0 +1,19 @@
+@import 'color-c';
+@import 'reset-c';
+@import 'font-c';
+@import 'container-c';
+
+@media screen and (min-width: 768px) {
+  #app {
+    min-height: 100vh;
+    background: #fff;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #app {
+    display: flex;
+    min-height: 100vh;
+    background: #fff;
+  }
+}
