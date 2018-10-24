@@ -63,6 +63,7 @@
             {{ loanOption.text }}
           </option>
         </select>
+        <br>
         <span class="select-span">關係狀態:</span>
         <select class="list-select" v-model="selected[6]">
           <option v-for="(relationshipOption, index) in relationshipOptions" :key="index" v-bind:value="relationshipOption.value">
@@ -75,7 +76,6 @@
             {{ familyOption.text }}
           </option>
         </select>
-        <br>
         <span class="select-span">族群認同:</span>
         <select class="list-select" v-model="selected[8]">
           <option v-for="(populationOption, index) in populationOptions" :key="index" v-bind:value="populationOption.value">
