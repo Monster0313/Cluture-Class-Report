@@ -35,9 +35,31 @@
                 font-size: 30px;
             }
         }
+        .list-query {
+            position: relative;
+            margin-top: -5vh;
+            width: 80%;
+            height: 10%;
+            line-height: 2rem;
+            float: left;
+            .select-span {
+                font-size: 12pt;
+            }
+            .noDifferent {
+                border: none;
+                padding: 2px;
+                margin-top: 5pt;
+                font-size: 13pt;
+                text-align: center;
+                background: linear-gradient(90deg, $light-red, $light-orange, $light-yellow, $light-green, $light-blue, $light-purple);
+                border-radius: 5pt;
+                height: 25pt;
+                weight: 50pt;
+            }
+        }
         .list-view {
-            width: 85%;
-            height: 85%;
+            width: 80%;
+            height: 80%;
             overflow: hidden;
             border: 2pt #000 solid;
             ul {
@@ -91,6 +113,29 @@
                         }
                     }
                 }
+                .fullColor {
+                    &:nth-child(6n-5) {
+                        background: RGBA(255, 0, 0, 0.8) !important;
+                    }
+                    &:nth-child(6n-4) {
+                        background: RGBA(255, 97, 0, 0.8) !important;
+                    }
+                    &:nth-child(6n-3) {
+                        background: RGBA(255, 255, 0, 0.8) !important;
+                    }
+                    &:nth-child(6n-2) {
+                        background: RGBA(0, 255, 0, 0.8) !important;
+                    }
+                    &:nth-child(6n-1) {
+                        background: RGBA(0, 0, 255, 0.8) !important;
+                    }
+                    &:nth-child(6n) {
+                        background: RGBA(139, 0, 255, 0.8) !important;
+                    }
+                }
+            }
+            .grayClass {
+                background: RGBA(130, 130, 130, 0.3) !important;
             }
         }
         .main-btn {
