@@ -24,6 +24,7 @@
           <p>
             {{ contents[page].content }}
           </p>
+          <p>{{ contents[page].subcontent }}</p>
         </div>
       </div>
       <div class="list-query" v-if="contents[page].listView">
@@ -121,6 +122,7 @@
           Back
           </button>
           <button class="next-btn"
+                  v-if="page < contents.length-1"
                   v-on:click="page += 1">
           Next
           </button>
@@ -171,6 +173,40 @@ export default {
         },
         {
           'listView': true // 只有那一面有顏色，正因為我們有這些差異才創造出這個美麗的世界
+        },
+        {
+          'title': '差異是『比較』出來的',
+          'content': '自由人 vs 受刑人； 同性戀 vs 異性戀； 聽人 vs 聾人',
+          'subcontent': '或許，你也聽過這樣一句話：「為什麼你都不學學你哥哥呢？」'
+        },
+        {
+          'title': '比較有好有壞',
+          'content': '適度的比較有助於彼此互相成長，',
+          'subcontent': '但錯誤、過分的比較就會造成巨大的災難。'
+        },
+        {
+          'title': '戰爭、侵略、大屠殺',
+          'content': '這些行為都是來自於差異，',
+          'subcontent': '且以國家、宗教的力量強調了彼此之間的不同。'
+        },
+        {
+          'title': '但同樣的'
+        },
+        {
+          // eslint-disable-next-line
+          'title': '多元、互助、凝聚力',
+          'subtitle': '這些美好同樣來自於差異。',
+          'content': '當每次遇到颱風、地震與各種重大事故、災難時，',
+          'subcontent': '台灣人總會願意貢獻自己微薄的力量幫助他人。'
+        },
+        {
+          'title': '如何讓差異成為動力',
+          'subtitle': '一切都取決於你的決定。'
+        },
+        {
+          'title': '最後',
+          'subtitle': '11月24日，請回家投票。',
+          'content': '讓你的選擇成為可能。'
         }
       ],
       voteContent: [
